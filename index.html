@@ -1,0 +1,136 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rsschool-cv-html</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container-centered">
+    <div class="two-columns">
+      <div class="left-column">
+        <header>
+          <h1>Anastasia Andreeva</h1>          
+        </header>
+        <main>
+          <section class="contacts">
+            <h3>Contacts</h3>
+            <ul>
+              <li>
+                <img src="./icons/email.svg" alt="Email Icon" width="30" height="30">
+                <p>fpm.andreeva@bsu.by</p>
+              </li>
+              <li>
+                <img src="./icons/behance.svg" alt="Behance Icon" width="30" height="30">
+                <a href="https://www.behance.net">Behance</a>
+              </li>
+              <li>
+                <img src="./icons/linkedin.svg" alt="LinkedIn Icon" width="30" height="30">
+                <a href="https://www.linkedin.com">LinkedIn</a>
+              </li>
+            </ul>
+          </section>
+          <section class="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript Basics</li>
+              <li>Git, GitHub</li>
+              <li>C++</li>
+              <li>Figma</li>
+            </ul>
+          </section>
+          <section class="languages">
+            <h3>Languages</h3>
+            <ul>
+              <li>
+                <p class="language-name">English</p>
+                <p>B2</p>
+              </li>
+              <li>
+                <p class="language-name">Russian, Belarusian</p>
+                <p>Native</p>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+      <aside class="right-column">
+        <section class="about-myself">
+          <div class="sub-header">          
+            <h3>About me</h3>
+          </div>
+          <p> I am independent and proactive. I understand the importance of creating highly readable and easily maintainable code. 
+            I am constantly striving to learn new technologies and look to ways to better myself in this rapidly changing industry.
+            I believe, that my ability to learn and to gain new skills 
+            will lead me through this path of becoming a proficient <b>Frontend Developer</b>.</p>          
+        </section>
+        <section class="education">
+          <div class="sub-header">            
+            <h3>Education</h3>
+          </div>
+          <p><strong>Belarusian State University, Faculty of Applied Mathematics and Computer Science</strong></p>
+          <p>Applied Computer Science</p>
+          <p>Years: 2021-2025</p>
+          <p>Specialization: Computer scientist. Software Development</p>
+        </section>
+        <section class="courses">
+          <div class="sub-header">            
+            <h3>Courses</h3>
+          </div>
+          <ul>
+            <li>Basics of C++ development: White Belt</li>            
+            <li><a href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0">RS school "JavaScript/Front-end. Stage 0"</a></li>
+          </ul>
+        </section>
+        <section class="code-example">
+          <div class="sub-header">           
+            <h3>Code example</h3>
+          </div>
+          <p>
+            Simplicity check.
+            We will divide the desired number x by all numbers from the range from two to x / 2 
+            and look at the remainder of the division. 
+            If a divisor that divides the number x without a remainder is not found in this range, then we have a prime number.</p>
+          <pre>
+            <code>
+const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
+  let divider = 2;
+  while (divider <= number / 2) {
+    if (number % divider === 0) {
+      return false;
+    }
+    divider += 1;
+  }
+  return true;
+}       </code>
+          </pre>
+        </section>
+      </aside>
+    </div>
+    <footer>
+      <a class="my-github" href="https://github.com/weohn">
+        <img class="github-icon" src="./icons/github.svg" alt="Github Icon" width="26" height="26">
+        <p>Visit my GitHub</p>
+      </a>      
+      <a href="https://rs.school/js/">
+        <img src="./icons/rsschool.svg" alt="Rsschool Icon" width="73" height="26">
+      </a>
+    </footer>
+  </div>
+</body>
+
+</html>
